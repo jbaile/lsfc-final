@@ -82,7 +82,7 @@ h1, h2, h3, h4, h5, h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  padding: 30px 0;
+  padding: 15px 0;
   height: 92px;
   position: fixed;
   left: 0;
@@ -119,19 +119,25 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
+#header #logo-text {
+  padding-left: 65px;
+  padding-top: 0;
+  margin: 0;
+}
+
 @media (max-width: 768px) {
   #header #logo h1 {
     font-size: 26px;
   }
   #header #logo img {
-    max-height: 40px;
+    max-height: 50px;
   }
 }
 
 #header.header-fixed {
-  background: rgba(52, 59, 64, 0.9);
+  background: rgba(218, 218, 218, 0.9);
   padding: 20px 0;
-  height: 72px;
+  height: 80px;
   transition: all 0.5s;
 }
 
@@ -141,7 +147,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   display: table;
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   background: url(../img/facility.jpg) top center fixed;
   background-size: cover;
 }
@@ -315,6 +321,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu ul {
+  z-index: 3;
   margin: 4px 0 0 0;
   border: 1px solid #e7e7e7;
 }
@@ -343,6 +350,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-menu ul ul {
   margin: 0;
+  padding: 0;
 }
 
 /* Mobile Nav Toggle */
@@ -362,7 +370,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #mobile-nav-toggle i {
-  color: #00ffff;
+  color: #ffde00;
 }
 
 @media (max-width: 768px) {
@@ -794,53 +802,64 @@ body.mobile-nav-active #mobile-nav-toggle {
   top: -30px;
 }
 
-/* Team Section
+/* -----------------------------
+Director Page
 --------------------------------*/
-#team {
-  background: #fff;
-  padding: 80px 0 60px 0;
+#directors {
+  background: #d1d1d1;
+  padding: 0;
 }
 
-#team .member {
+#directors ul{
+  list-style-type: none;
+}
+
+#directors ul li{
+  display: inline-block;
+  padding-top: 10px;
+  padding-right: 10px;
+}
+
+.member {
   text-align: center;
   margin-bottom: 20px;
 }
 
-#team .member .pic {
+.member .pic {
   margin-bottom: 15px;
   overflow: hidden;
   height: 260px;
 }
 
-#team .member .pic img {
+.member .pic img {
   max-width: 100%;
 }
 
-#team .member h4 {
+.member h4 {
   font-weight: 700;
   margin-bottom: 2px;
   font-size: 18px;
 }
 
-#team .member span {
+.member span {
   font-style: italic;
   display: block;
   font-size: 13px;
 }
 
-#team .member .social {
+.member .social {
   margin-top: 15px;
 }
 
-#team .member .social a {
+.member .social a {
   color: #b3b3b3;
 }
 
-#team .member .social a:hover {
+.member .social a:hover {
   color: #2dc997;
 }
 
-#team .member .social i {
+.member .social i {
   font-size: 18px;
   margin: 0 2px;
 }
@@ -951,6 +970,115 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: #51d8ad;
 }
 
+/* Service Page
+--------------------------------*/
+#service {
+  background: #fff;
+  padding: 20px 0;
+}
+
+#service .service-container .background {
+}
+
+#service .service-container .content {
+  background: #fff;
+}
+
+#service .service-container .title {
+  color: #333;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+@media (max-width: 768px) {
+  #service .service-container .title {
+    padding-top: 15px;
+  }
+}
+
+#service .service-container p {
+  line-height: 26px;
+}
+
+#service .service-container p:last-child {
+  margin-bottom: 0;
+}
+
+#service .service-container .icon-box {
+  background: #fff;
+  background-size: cover;
+  padding: 0 0 30px 0;
+}
+
+#service .service-container .icon-box .icon {
+  float: left;
+  background: #fff;
+  padding: 16px;
+  border-radius: 50%;
+  border: 2px solid #2dc997;
+}
+
+#service .service-container .icon-box .icon i {
+  color: #2dc997;
+  font-size: 24px;
+}
+
+#service .service-container .icon-box .title {
+  margin-left: 80px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+#service .service-container .icon-box .title a {
+  color: #111;
+}
+
+#service .service-container .icon-box .description {
+  margin-left: 80px;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+#service .btn-get-started {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 5px 90px 20px;
+  border: 2px solid #000;
+  color: #000;
+}
+
+#service .btn-get-started:hover {
+  background: #2dc997;
+  border: 2px solid #2dc997;
+}
+
+/*-------------
+Calendar
+--------------*/
+.googleCalendar{
+  position: relative;
+  height: 0;
+  width: 100%;
+  padding-bottom: 70%;
+}
+
+.googleCalendar iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -999,4 +1127,26 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-align: center;
   font-size: 13px;
   color: #000;
+}
+
+/*Media Queries*/
+@media (min-width:772px){
+  #header #logo-text {
+    display: none;
+  }
+
+    #header #logo img {
+      max-height: 50px;
+    }
+}
+
+@media (min-width:1000px){
+  #header #logo-text {
+    display: block;
+    float: left;
+  }
+
+    #header #logo img {
+      max-height: 50px;
+    }
 }
