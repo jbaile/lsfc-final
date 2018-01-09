@@ -23,7 +23,7 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/main.css" rel="stylesheet">
-  <link href="css/lightbox.css" rel="stylesheet">
+  <link href="dist/css/lightbox.css" rel="stylesheet">
 </head>
 
 <body>
@@ -121,99 +121,33 @@
     <!--==========================
           Our Facility
     ============================-->
-<section id="facility">
-  <div class="section-header">
+    <section id="facility">
+    <div class="section-header">
     <h3 class="section-title">Our facility</h3>
     <p class="section-description">Take a little tour of our facility. Visit us today!</p>
-  </div>
-
-<div class="container">
-  <div class="row">
-  <div class="col-lg-4 col-md-6 lightbox">
-    <img src="img/gallery/image1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
-  </div>
-  <div class="col-lg-4 col-md-6 lightbox">
-    <img src="img/gallery/image2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
-  </div>
-  <div class="col-lg-4 col-md-6 lightbox">
-    <img src="img/gallery/image3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
-  </div>
-  <div class="col-lg-4 col-md-6 lightbox">
-    <img src="img/gallery/image4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
-  </div>
-  <div class="col-lg-4 col-md-6 lightbox">
-    <img src="img/gallery/image5.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
-  </div>
-  <div class="col-lg-4 col-md-6 lightbox">
-    <img src="img/gallery/image6.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
-  </div>
-  </div>
-</div>
-
-<!-- The Modal/Lightbox -->
-<div id="myModal" class="modal">
-  <span class="close cursor" onclick="closeModal()">&times;</span>
-  <div class="modal-content">
-
-    <div class="mySlides">
-      <div class="numbertext">1 / 6</div>
-      <img src="img/gallery/image1.jpg" style="width:100%">
     </div>
-
-    <div class="mySlides">
-      <div class="numbertext">2 / 6</div>
-      <img src="img/gallery/image2.jpg" style="width:100%">
+    <div class="container">
+    <div class="row">
+    <div class="col-lg-4 col-md-6 gallery">
+    <a class="example-image-link" href="img/gallery/image1.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="img/gallery/image1.jpg" alt=""/></a>
     </div>
-
-    <div class="mySlides">
-      <div class="numbertext">3 / 6</div>
-      <img src="img/gallery/image3.jpg" style="width:100%">
+    <div class="col-lg-4 col-md-6 gallery">
+    <a class="example-image-link" href="img/gallery/image2.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="img/gallery/image2.jpg" alt=""/></a>
     </div>
-
-    <div class="mySlides">
-      <div class="numbertext">4 / 6</div>
-      <img src="img/gallery/image4.jpg" style="width:100%">
+    <div class="col-lg-4 col-md-6 gallery">
+    <a class="example-image-link" href="img/gallery/image3.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="img/gallery/image3.jpg" alt=""/></a>
     </div>
-
-    <div class="mySlides">
-      <div class="numbertext">5 / 6</div>
-      <img src="img/gallery/image4.jpg" style="width:100%">
+    <div class="col-lg-4 col-md-6 gallery">
+    <a class="example-image-link" href="img/gallery/image4.jpg" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard."><img class="example-image" src="img/gallery/image4.jpg" alt="" /></a>
     </div>
-
-    <div class="mySlides">
-      <div class="numbertext">6 / 6</div>
-      <img src="img/gallery/image4.jpg" style="width:100%">
+    <div class="col-lg-4 col-md-6 gallery">
+    <a class="example-image-link" href="img/gallery/image5.jpg" data-lightbox="example-set" data-title="The next image in the set is preloaded as you're viewing."><img class="example-image" src="img/gallery/image5.jpg" alt="" /></a>
     </div>
-
-    <!-- Next/previous controls -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-    <!-- Caption text -->
-    <div class="caption-container">
-      <p id="caption"></p>
+    <div class="col-lg-4 col-md-6 gallery">
+    <a class="example-image-link" href="img/gallery/image6.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" src="img/gallery/image6.jpg" alt="" /></a>
     </div>
-
-    <!-- Thumbnail image controls -->
-    <div class="column">
-      <img class="demo" src="img1.jpg" onclick="currentSlide(1)" alt="Nature">
     </div>
-
-    <div class="column">
-      <img class="demo" src="img2.jpg" onclick="currentSlide(2)" alt="Trolltunga">
     </div>
-
-    <div class="column">
-      <img class="demo" src="img3.jpg" onclick="currentSlide(3)" alt="Mountains">
-    </div>
-
-    <div class="column">
-      <img class="demo" src="img4.jpg" onclick="currentSlide(4)" alt="Lights">
-    </div>
-  </div>
-
-</section>
-
     <!--==========================
           Footer
     ============================-->
@@ -262,6 +196,7 @@
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
+  <script src="dist/js/lightbox.js"></script>
 
 </body>
 </html>
