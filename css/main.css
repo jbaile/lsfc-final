@@ -1193,15 +1193,13 @@ Calendar
   text-align: center;
 }
 
-#footer li {
+#footer .bot-nav-images ul {
   text-align: center;
+  display: inline-block;
   list-style: none;
-  margin: 0;
-  padding: 0 0 10px 0;
 }
 
-#footer li ul {
-  display: inline;
+#footer .bot-nav-images ul li {
   padding-left: 0;
 }
 
