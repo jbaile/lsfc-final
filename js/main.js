@@ -21,7 +21,7 @@ jQuery(document).ready(function( $ ) {
   // Initiate superfish on nav menu
   $('.nav-menu').superfish({
     animation: {opacity:'show'},
-    speed: 400
+    speed: 200
   });
 
   // Mobile Navigation
@@ -71,7 +71,7 @@ jQuery(document).ready(function( $ ) {
           top_space = $('#header').outerHeight();
 
           if( ! $('#header').hasClass('header-fixed') ) {
-            top_space = top_space - 20;
+            top_space = top_space - 100;
           }
         }
 
