@@ -26,7 +26,7 @@
   transition: background 0.5s;
 }
 
-@media (max-width: 770px) {
+@media (max-width: 850px) {
   .back-to-top {
     bottom: 15px;
   }
@@ -49,7 +49,6 @@
 
 #header {
   padding: 0;
-  height: 92px;
   position: fixed;
   left: 0;
   top: 0;
@@ -76,12 +75,12 @@
 }
 
 #header #logo-text {
-  padding-left: 65px;
+  padding-left: 0px;
   padding-top: 0;
   margin: 0;
 }
 
-@media (max-width: 770px) {
+@media (max-width: 850px) {
   #header #logo h1 {
     font-size: 26px;
   }
@@ -93,8 +92,7 @@
 #header.header-fixed {
   background: #e9e9e9;
   /*Nav colour*/
-  padding: 20px 0;
-  height: 100px;
+  padding: 7px 0;
   transition: all 0.5s;
 }
 
@@ -106,7 +104,7 @@
   display: table;
   width: 100%;
   height: 85vh;
-  background: url(../img/facility.jpg) top center fixed;
+  background-image:url(../img/lsfc_1.jpg);
   background-size: cover;
 }
 
@@ -128,9 +126,16 @@
   color: #fff;
 }
 
-@media (max-width: 770px) {
+@media (max-width: 850px) {
   #hero h1 {
     font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+@media (max-width: 600px) {
+  #hero h1 {
+    font-size: 20px;
     line-height: 36px;
   }
 }
@@ -157,7 +162,7 @@
   border-radius: 2px;
   font-size: 14px;
 }
-@media (max-width: 770px) {
+@media (max-width: 850px) {
   #hero h2 {
     font-size: 18px;
     line-height: 24px;
@@ -193,7 +198,7 @@
   display: table;
   width: 100%;
   height: 70vh;
-  background: url(../img/male-players.jpg) top center fixed; /*CHANGE PICTURE*/
+  background-image:url(../img/lsfc_2.jpeg);
   background-size: cover;
 }
 
@@ -215,7 +220,7 @@
   color: #fff;
 }
 
-@media (max-width: 770px) {
+@media (max-width: 850px) {
   #hero-about h1 {
     font-size: 28px;
     line-height: 36px;
@@ -230,7 +235,7 @@
   display: table;
   width: 100%;
   height: 70vh;
-  background: url(../img/racquets.jpg) top center fixed; /*CHANGE PICTURE*/
+  background-image:url(../img/lsfc_3.jpg);
   background-size: cover;
 }
 
@@ -252,7 +257,7 @@
   color: #fff;
 }
 
-@media (max-width: 770px) {
+@media (max-width: 850px) {
   #hero-membership h1 {
     font-size: 28px;
     line-height: 36px;
@@ -267,7 +272,7 @@
   display: table;
   width: 100%;
   height: 70vh;
-  background: url(../img/contact.jpg) top center fixed; /*CHANGE PICTURE*/
+  background-image:url(../img/lsfc_4.jpg);
   background-size: cover;
 }
 
@@ -289,7 +294,7 @@
   color: #fff;
 }
 
-@media (max-width: 770px) {
+@media (max-width: 850px) {
   #hero-membership h1 {
     font-size: 28px;
     line-height: 36px;
@@ -364,16 +369,17 @@
   margin: 0;
 }
 
-@media (max-width: 770px) {
+@media (max-width: 850px) {
   #nav-menu-container {
     display: none;
   }
 }
 
+
+
 /* Nav Meu Styling */
 
 .nav-menu a {
-  padding: 0 8px 10px 8px;
   text-decoration: none;
   display: inline-block;
   color: #D5A00E;
@@ -410,9 +416,9 @@
 }
 
 .nav-menu ul {
-  z-index: 3;
-  margin: 4px 0 0 0;
+  z-index: 1;
   border: 1px solid #d0d0d0;
+  margin-bottom: 10px;
 }
 
 .nav-menu ul li {
@@ -463,11 +469,12 @@
   color: #D5A00E;
 }
 
-@media (max-width: 770px) {
+@media (max-width: 850px) {
   #mobile-nav-toggle {
     display: inline;
   }
 }
+
 
 /* Mobile Nav Styling */
 
